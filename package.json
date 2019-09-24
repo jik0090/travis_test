@@ -6,6 +6,11 @@
   "scripts": {
     "build": "rollup -c"
   },
+  "husky": {
+    "hooks": {
+      "pre-push": "yarn build"
+    }
+  },
   "repository": "git@github.com:jik0090/travis_test.git",
   "author": "lyohan <jik0090@naver.com>",
   "license": "MIT",
@@ -15,6 +20,7 @@
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/preset-env": "^7.6.2",
     "@babel/preset-react": "^7.0.0",
+    "husky": "^3.0.5",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "rollup": "^1.21.4",

@@ -23,10 +23,10 @@ deploy:
   target_branch: master
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
-  local_dir: docs
+  local_dir: dist
   keep_history: true
-  on:
-    branch: master
+  # on:
+  #   branch: master
 
 # after_success:
 #   - ./deploy.sh

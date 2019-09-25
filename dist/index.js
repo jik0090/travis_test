@@ -19,8 +19,6 @@ function _taggedTemplateLiteral(strings, raw) {
   }));
 }
 
-function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  height: 70px\n  background-color: white\n  padding: 0 30px\n  display: flex\n  align-items: center\n  margin-bottom: 40px\n  a:active, a:hover {\n    text-decoration: none\n  }\n  \n  border-bottom: 1px solid grey\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -28,7 +26,7 @@ function _templateObject() {
 
   return data;
 }
-var NavBar = styled.nav(_templateObject());
+
 var NavBar$1 = (function (_ref) {
   var _ref$style = _ref.style,
       style = _ref$style === void 0 ? {} : _ref$style,

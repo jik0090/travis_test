@@ -1,0 +1,25 @@
+dist: trusty
+language: node_js
+node_js:
+  - 10
+  - node
+cache:
+  yarn: true
+  directories:
+    - .npm
+branches:
+  only:
+    - master
+before_install:
+  - curl -o- -L https://yarnpkg.com/install.sh | bash -s
+  - export PATH="$HOME/.yarn/bin:$PATH"
+
+install: true
+script:
+  - yarn
+  - yarn build
+
+after_success:
+  - git add .
+  - git commit 'travis'
+  - git push

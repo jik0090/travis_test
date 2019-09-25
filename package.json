@@ -4,7 +4,8 @@
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "pre-add": "yarn build && git add ."
   },
   "husky": {
     "hooks": {

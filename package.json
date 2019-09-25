@@ -4,12 +4,8 @@
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "scripts": {
-    "build": "rollup -c"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn build"
-    }
+    "build": "rollup -c",
+    "pre-add": "yarn build && git add ."
   },
   "repository": "git@github.com:jik0090/travis_test.git",
   "author": "lyohan <jik0090@naver.com>",

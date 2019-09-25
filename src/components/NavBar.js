@@ -8,7 +8,6 @@ const NavBar = styled.nav`
   display: flex
   align-items: center
   margin-bottom: 40px
-
   a:active, a:hover {
     text-decoration: none
   }

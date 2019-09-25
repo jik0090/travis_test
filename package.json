@@ -7,6 +7,11 @@
     "build": "rollup -c",
     "pre-add": "yarn build && git add ."
   },
+  "husky": {
+    "hooks": {
+      "pre-push": "yarn build"
+    }
+  },
   "repository": "git@github.com:jik0090/travis_test.git",
   "author": "lyohan <jik0090@naver.com>",
   "license": "MIT",
